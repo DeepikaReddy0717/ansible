@@ -24,7 +24,7 @@ services:
       - springboot-mysql-net
 
   frontend:
-    image: deepikareddy0717/tt-asible-frontend:latest
+    image: deepikareddy0717/t-ansible-frontend:latest
     container_name: react
     ports:
       - "30004:80"
