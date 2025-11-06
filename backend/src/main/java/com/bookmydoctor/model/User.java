@@ -1,9 +1,9 @@
 package com.bookmydoctor.model;
 
 import jakarta.persistence.*;
-
+@Table(name = "users") 
 @Entity
-public class Users {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -12,9 +12,9 @@ public class Users {
     private String email;
     private String password;
 
-    public Users() {}
+    public User() {}
 
-    public Users(String fullName, String email, String password) {
+    public User(String fullName, String email, String password) {
         this.fullName = fullName;
         this.email = email;
         this.password = password;
